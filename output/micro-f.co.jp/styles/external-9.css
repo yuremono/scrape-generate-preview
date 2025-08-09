@@ -1,0 +1,23 @@
+.detail2 img{
+  width:100%;
+}
+#contents .emptyNone td div{
+  text-align:center;
+}
+
+
+.h_nav > ul li.drop li {
+  border:0.5px solid #282e855e;
+}
+.title1{
+  --sc:#8079c5;
+}
+.title1 h1 em{
+  color: #ffffff!important;
+}
+.title1 h1{
+  color: #ffffff;
+  -webkit-text-stroke: currentColor;
+  -webkit-text-stroke-width: 1px; 
+  /*-webkit-text-fill-color: var(--stC);*/
+}

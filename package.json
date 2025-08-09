@@ -1,0 +1,25 @@
+{
+  "name": "scrape-generate-preview",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scrape": "node src/scrape.js",
+    "preview": "npx --yes http-server output -p 5173 -c-1",
+    "optimize": "node src/optimize.js",
+    "collect:features": "node src/collectFeatures.js",
+    "ai:segment": "node src/aiSegment.js",
+    "tag": "node src/TagElements.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "cheerio": "^1.1.2",
+    "dotenv": "^16.4.5",
+    "postcss": "^8.5.6",
+    "postcss-safe-parser": "^7.0.1",
+    "puppeteer": "^24.16.0"
+  }
+}

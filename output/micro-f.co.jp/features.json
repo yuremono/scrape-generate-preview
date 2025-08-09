@@ -1,0 +1,1212 @@
+{
+  "url": "http://localhost:5173/micro-f.co.jp/index.optimized.html",
+  "count": 39,
+  "items": [
+    {
+      "tag": "div",
+      "id": "contents_wrap",
+      "classes": [],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 4143.375
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "60px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるた",
+      "childCount": 1,
+      "index": 1
+    },
+    {
+      "tag": "footer",
+      "id": "global_footer",
+      "classes": [],
+      "rect": {
+        "x": 0,
+        "y": 4143.375,
+        "width": 785,
+        "height": 1069
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "本社・営業部 〒153-0061 東京都目黒区中目黒4-5-26 TEL： 03-3791-0770 FAX： 03-3791-2200 製品管理部 〒223-0056 横浜市港北区新吉田町6104-1 TEL： 045-620-8012 ",
+      "childCount": 1,
+      "index": 2
+    },
+    {
+      "tag": "section",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 4143.375
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるた",
+      "childCount": 6,
+      "index": 5
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 20,
+        "y": 1140,
+        "width": 745,
+        "height": 279
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるため弊社部品の使用方法や生産方法を十分に考慮し、より良い提案を行うことで部品調達最適化の手助けをします",
+      "childCount": 2,
+      "index": 6
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 20,
+        "y": 1659,
+        "width": 745,
+        "height": 64
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "PRODUCT製品紹介",
+      "childCount": 2,
+      "index": 7
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 20,
+        "y": 1763,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "プラスチック用インサートナット プラスチック用インサートナット",
+      "childCount": 2,
+      "index": 8
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 407.5,
+        "y": 1763,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "インサートナット圧入装置 インサートナット圧入装置",
+      "childCount": 2,
+      "index": 9
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 20,
+        "y": 2104.125,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "プラスチック射出成形金型 プラスチック射出成形金型",
+      "childCount": 2,
+      "index": 10
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 407.5,
+        "y": 2104.125,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "精密切削（自動旋盤）加工 精密切削（自動旋盤）加工",
+      "childCount": 2,
+      "index": 11
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 20,
+        "y": 2445.25,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "クリンチングファスナー クリンチングファスナー",
+      "childCount": 2,
+      "index": 12
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 407.5,
+        "y": 2445.25,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "ブラインドリベット/ナット※ インサートナット",
+      "childCount": 2,
+      "index": 13
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 114.25,
+        "y": 2936.375,
+        "width": 556.484375,
+        "height": 86
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "WHAT WE CAN DOマイクロファスナー株式会社でできること インサートナット・クリンチングファスナーの事ならマイクロファスナー株式会社へ",
+      "childCount": 2,
+      "index": 20
+    },
+    {
+      "tag": "article",
+      "id": "",
+      "classes": [],
+      "rect": {
+        "x": 20,
+        "y": 3683.375,
+        "width": 745,
+        "height": 64
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "NEWS & TOPICS新着情報",
+      "childCount": 2,
+      "index": 21
+    },
+    {
+      "tag": "div",
+      "id": "header",
+      "classes": [
+        "h"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 60
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "TH EN JP 03-3791-0770 CONTACT 製品紹介 プラスチック用インサートナット インサートナット圧入装置 プラスチック射出成形金型 精密切削（自動旋盤）加工品 クリンチングファスナー ブラインドリベット/ナット 導入事",
+      "childCount": 1,
+      "index": 22
+    },
+    {
+      "tag": "div",
+      "id": "contents",
+      "classes": [
+        "clearfix"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 4143.375
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるた",
+      "childCount": 1,
+      "index": 23
+    },
+    {
+      "tag": "div",
+      "id": "c34",
+      "classes": [
+        "Background"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 600
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgb(250, 250, 250)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "",
+      "childCount": 0,
+      "index": 24
+    },
+    {
+      "tag": "div",
+      "id": "c2",
+      "classes": [
+        "mv",
+        "bg100"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 600
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "margin": {
+        "top": "-60px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く",
+      "childCount": 2,
+      "index": 25
+    },
+    {
+      "tag": "div",
+      "id": "c32",
+      "classes": [
+        "clearfix",
+        "mv_it",
+        "sg"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 600
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く",
+      "childCount": 1,
+      "index": 26
+    },
+    {
+      "tag": "div",
+      "id": "c33",
+      "classes": [
+        "clearfix",
+        "mv_img",
+        "show"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "width": 785,
+        "height": 600
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "60px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "",
+      "childCount": 1,
+      "index": 27
+    },
+    {
+      "tag": "div",
+      "id": "c36",
+      "classes": [],
+      "rect": {
+        "x": 0,
+        "y": 660,
+        "width": 785,
+        "height": 300
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "60px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "",
+      "childCount": 1,
+      "index": 28
+    },
+    {
+      "tag": "div",
+      "id": "c35",
+      "classes": [
+        "clearfix",
+        "art-fl",
+        "aic",
+        "bg100",
+        "in1680",
+        "txwh",
+        "em-tx",
+        "PB1",
+        "left-tab"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 1020,
+        "width": 785,
+        "height": 519
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(102, 102, 102, 0.733)",
+      "margin": {
+        "top": "60px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "120px",
+        "right": "20px",
+        "bottom": "120px",
+        "left": "20px"
+      },
+      "text": "ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるため弊社部品の使用方法や生産方法を十分に考慮し、より良い提案を行うことで部品調達最適化の手助けをします",
+      "childCount": 1,
+      "index": 29
+    },
+    {
+      "tag": "div",
+      "id": "c24",
+      "classes": [
+        "Product",
+        "PB1",
+        "mt0"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 1539,
+        "width": 785,
+        "height": 2024.375
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgb(255, 255, 255)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "120px",
+        "right": "20px",
+        "bottom": "120px",
+        "left": "20px"
+      },
+      "text": "PRODUCT製品紹介 プラスチック用インサートナット プラスチック用インサートナット インサートナット圧入装置 インサートナット圧入装置 プラスチック射出成形金型 プラスチック射出成形金型 精密切削（自動旋盤）加工 精密切削（自動旋盤）加",
+      "childCount": 5,
+      "index": 30
+    },
+    {
+      "tag": "div",
+      "id": "c37",
+      "classes": [
+        "clearfix"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 1659,
+        "width": 745,
+        "height": 64
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "PRODUCT製品紹介",
+      "childCount": 1,
+      "index": 32
+    },
+    {
+      "tag": "div",
+      "id": "c38",
+      "classes": [
+        "card3",
+        "mt40"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 1763,
+        "width": 745,
+        "height": 993.375
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "40px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "プラスチック用インサートナット プラスチック用インサートナット インサートナット圧入装置 インサートナット圧入装置 プラスチック射出成形金型 プラスチック射出成形金型 精密切削（自動旋盤）加工 精密切削（自動旋盤）加工 クリンチングファスナ",
+      "childCount": 6,
+      "index": 33
+    },
+    {
+      "tag": "div",
+      "id": "c30",
+      "classes": [
+        "fl50",
+        "gap0",
+        "mtB1"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 2876.375,
+        "width": 745,
+        "height": 567
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "120px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "WHAT WE CAN DOマイクロファスナー株式会社でできること インサートナット・クリンチングファスナーの事ならマイクロファスナー株式会社へ CASE導入事例 SOLUSIONソリューション",
+      "childCount": 3,
+      "index": 35
+    },
+    {
+      "tag": "div",
+      "id": "c40",
+      "classes": [
+        "clearfix",
+        "Cando"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 2876.375,
+        "width": 745,
+        "height": 206
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgb(250, 250, 250)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "60px",
+        "right": "20px",
+        "bottom": "60px",
+        "left": "20px"
+      },
+      "text": "WHAT WE CAN DOマイクロファスナー株式会社でできること インサートナット・クリンチングファスナーの事ならマイクロファスナー株式会社へ",
+      "childCount": 1,
+      "index": 36
+    },
+    {
+      "tag": "div",
+      "id": "c41",
+      "classes": [
+        "clearfix",
+        "ul_btns"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 3082.375,
+        "width": 745,
+        "height": 361
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "CASE導入事例 SOLUSIONソリューション",
+      "childCount": 1,
+      "index": 37
+    },
+    {
+      "tag": "div",
+      "id": "c28",
+      "classes": [
+        "nmbB05",
+        "wrapper100in",
+        "fl28",
+        "mt0"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 3563.375,
+        "width": 785,
+        "height": 580
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(236, 235, 245, 0.8)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "-60px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "120px",
+        "right": "20px",
+        "bottom": "120px",
+        "left": "20px"
+      },
+      "text": "NEWS & TOPICS新着情報 2025.07.15 【人とくるまのテクノロジー展2025 名古屋】明日から開催です！皆様のご来場心よりお待ちしております。※ご来場の際は事前の来場登録をお勧めいたします。場所:Aichi Sky Exp",
+      "childCount": 2,
+      "index": 39
+    },
+    {
+      "tag": "div",
+      "id": "c42",
+      "classes": [
+        "clearfix"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 3683.375,
+        "width": 745,
+        "height": 64
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "NEWS & TOPICS新着情報",
+      "childCount": 1,
+      "index": 40
+    },
+    {
+      "tag": "div",
+      "id": "c43",
+      "classes": [
+        "form_wrap",
+        "form_simple",
+        "mt0"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 3771.375,
+        "width": 745,
+        "height": 252
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "2025.07.15 【人とくるまのテクノロジー展2025 名古屋】明日から開催です！皆様のご来場心よりお待ちしております。※ご来場の際は事前の来場登録をお勧めいたします。場所:Aichi Sky Expo（愛知県国際展示場）2025年07",
+      "childCount": 10,
+      "index": 41
+    },
+    {
+      "tag": "div",
+      "id": "footer",
+      "classes": [
+        "f"
+      ],
+      "rect": {
+        "x": 0,
+        "y": 4143.375,
+        "width": 785,
+        "height": 1069
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgb(40, 46, 133)",
+      "margin": {
+        "top": "60px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "本社・営業部 〒153-0061 東京都目黒区中目黒4-5-26 TEL： 03-3791-0770 FAX： 03-3791-2200 製品管理部 〒223-0056 横浜市港北区新吉田町6104-1 TEL： 045-620-8012 ",
+      "childCount": 1,
+      "index": 42
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 1763,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "プラスチック用インサートナット プラスチック用インサートナット",
+      "childCount": 1,
+      "index": 43
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 407.5,
+        "y": 1763,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "インサートナット圧入装置 インサートナット圧入装置",
+      "childCount": 1,
+      "index": 44
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 2104.125,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "プラスチック射出成形金型 プラスチック射出成形金型",
+      "childCount": 1,
+      "index": 45
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 407.5,
+        "y": 2104.125,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "精密切削（自動旋盤）加工 精密切削（自動旋盤）加工",
+      "childCount": 1,
+      "index": 46
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 2445.25,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "クリンチングファスナー クリンチングファスナー",
+      "childCount": 1,
+      "index": 47
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 407.5,
+        "y": 2445.25,
+        "width": 357.5,
+        "height": 311.125
+      },
+      "visible": true,
+      "hasHeading": true,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "ブラインドリベット/ナット※ インサートナット",
+      "childCount": 1,
+      "index": 48
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 20,
+        "y": 4324.375,
+        "width": 368.765625,
+        "height": 140
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "7px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "本社・営業部 〒153-0061 東京都目黒区中目黒4-5-26 TEL： 03-3791-0770 FAX： 03-3791-2200",
+      "childCount": 2,
+      "index": 55
+    },
+    {
+      "tag": "div",
+      "id": "",
+      "classes": [
+        "box"
+      ],
+      "rect": {
+        "x": 396.203125,
+        "y": 4324.375,
+        "width": 368.765625,
+        "height": 140
+      },
+      "visible": true,
+      "hasHeading": false,
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "margin": {
+        "top": "0px",
+        "right": "0px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "padding": {
+        "top": "0px",
+        "right": "7px",
+        "bottom": "0px",
+        "left": "0px"
+      },
+      "text": "製品管理部 〒223-0056 横浜市港北区新吉田町6104-1 TEL： 045-620-8012 FAX： 045-620-8013",
+      "childCount": 2,
+      "index": 56
+    }
+  ]
+}

@@ -1,0 +1,70 @@
+{
+  "assets": [
+    {
+      "name": "external-1.css",
+      "path": "./styles/external-1.css",
+      "originHref": "https://cdn.jsdelivr.net/npm/yakuhanjp@3.4.1/dist/css/yakuhanjp-narrow.min.css",
+      "originId": null
+    },
+    {
+      "name": "external-2.css",
+      "path": "./styles/external-2.css",
+      "originHref": "https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css",
+      "originId": null
+    },
+    {
+      "name": "external-3.css",
+      "path": "./styles/external-3.css",
+      "originHref": "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css",
+      "originId": null
+    },
+    {
+      "name": "external-4.css",
+      "path": "./styles/external-4.css",
+      "originHref": "https://micro-f.co.jp/js/magnific-popup/magnific-popup.css",
+      "originId": null
+    },
+    {
+      "name": "external-5.css",
+      "path": "./styles/external-5.css",
+      "originHref": "https://micro-f.co.jp/js/slick/slick-theme.css",
+      "originId": null
+    },
+    {
+      "name": "external-6.css",
+      "path": "./styles/external-6.css",
+      "originHref": "https://micro-f.co.jp/js/slick/slick.css",
+      "originId": null
+    },
+    {
+      "name": "external-7.css",
+      "path": "./styles/external-7.css",
+      "originHref": "https://micro-f.co.jp/css/bxi.css",
+      "originId": null
+    },
+    {
+      "name": "external-8.css",
+      "path": "./styles/external-8.css",
+      "originHref": "https://micro-f.co.jp/css/index_html.css",
+      "originId": null
+    },
+    {
+      "name": "external-9.css",
+      "path": "./styles/external-9.css",
+      "originHref": "https://micro-f.co.jp/css/common.css",
+      "originId": null
+    },
+    {
+      "name": "external-10.css",
+      "path": "./styles/external-10.css",
+      "originHref": "https://micro-f.co.jp/css/common_style.css",
+      "originId": null
+    },
+    {
+      "name": "external-11.css",
+      "path": "./styles/external-11.css",
+      "originHref": "https://micro-f.co.jp/css/style.css",
+      "originId": null
+    }
+  ]
+}
