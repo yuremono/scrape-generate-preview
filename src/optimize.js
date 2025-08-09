@@ -7,6 +7,10 @@ const crypto = require("crypto");
 const cheerio = require("cheerio");
 const postcss = require("postcss");
 
+// js-で始まるクラスをHTMLから除去するフラグ
+// 無効化するには false にしてください
+const REMOVE_JS_CLASSES = true;
+
 function ensureDirectoryExists(targetDirPath) {
   if (!fs.existsSync(targetDirPath)) {
     fs.mkdirSync(targetDirPath, { recursive: true });
@@ -87,6 +91,17 @@ function extractInlineStylesAndRewriteHtml($) {
     } catch (_) {}
   });
   return ""; // 追加CSSは生成しない
+}
+
+function removeJsPrefixedClasses($) {
+	$("[class]").each((_, el) => {
+		const current = ($(el).attr("class") || "")
+			.split(/\s+/)
+			.filter(Boolean);
+		const kept = current.filter((c) => !/^js-/.test(c));
+		if (kept.length > 0) $(el).attr("class", kept.join(" "));
+		else $(el).removeAttr("class");
+	});
 }
 
 function isSelectorSafelisted(selector) {
@@ -187,34 +202,75 @@ function purgeUnusedCss(cssText, $) {
 }
 
 function buildStructuredOutline($) {
-  // 視覚的に明確なセクションを近似：body直下、および id を持つ大きめのブロックを抽出
-  const sections = [];
+	// 要約関数
+	const summarize = (el) => {
+		const $el = $(el);
+		const tag = el.tagName || el.name || "";
+		const id = $el.attr("id") || "";
+		const classes = ($el.attr("class") || "").split(/\s+/).filter(Boolean);
+		const text = $el.text().replace(/\s+/g, " ").trim().slice(0, 120);
+		const headings = $el
+			.find("h1,h2,h3")
+			.slice(0, 3)
+			.map((i, h) => $(h).text().replace(/\s+/g, " ").trim().slice(0, 80))
+			.get();
+		return { tag, id, classes, text, headings };
+	};
 
-  const topLevel = $("body").children();
-  topLevel.each((_, el) => {
-    const $el = $(el);
-    const tag = el.tagName || el.name || "";
-    const id = $el.attr("id") || "";
-    const classList = ($el.attr("class") || "").split(/\s+/).filter(Boolean);
-    const text = $el.text().replace(/\s+/g, " ").trim().slice(0, 120);
+	const bodyChildren = $("body").children().toArray();
 
-    // 子ブロック（idや見出しを持つもの）
-    const childBlocks = [];
-    $el.find("section, article, [id], h1, h2, h3").each((__, child) => {
-      const $c = $(child);
-      const tagC = child.tagName || child.name || "";
-      const idC = $c.attr("id") || "";
-      const classListC = ($c.attr("class") || "").split(/\s+/).filter(Boolean);
-      const textC = $c.text().replace(/\s+/g, " ").trim().slice(0, 80);
-      if (idC || /h[1-3]/i.test(tagC) || /section|article/i.test(tagC)) {
-        childBlocks.push({ tag: tagC, id: idC, classes: classListC, text: textC });
-      }
-    });
+	// ヘッダー候補
+	const headerEl =
+		$("header").first()[0] ||
+		$("[role='banner']").first()[0] ||
+		$("#header, .header, .site-header").first()[0] ||
+		null;
+	// フッター候補
+	const footerEl =
+		$("footer").first()[0] ||
+		$("[role='contentinfo']").first()[0] ||
+		$("#footer, .footer, .site-footer").first()[0] ||
+		null;
 
-    sections.push({ tag, id, classes: classList, text, children: childBlocks.slice(0, 30) });
-  });
+	// main候補: ヘッダー/フッターを除く body 直下のブロック
+	const excluded = new Set([headerEl, footerEl].filter(Boolean));
+	const mainBlocks = bodyChildren.filter((el) => !excluded.has(el));
 
-  return { sections };
+	// main 内のセクション的ブロック
+	const mainSections = [];
+	mainBlocks.forEach((el) => {
+		const $el = $(el);
+		// section-like 子要素
+		const sectionLike = $el.is("section, article, main")
+			? [el]
+			: $el.find("section, article").toArray();
+		if (sectionLike.length === 0) {
+			mainSections.push(summarize(el));
+		} else {
+			sectionLike.forEach((c) => mainSections.push(summarize(c)));
+		}
+	});
+
+	const outline = {
+		header: headerEl ? summarize(headerEl) : null,
+		main: { sections: mainSections.slice(0, 100) },
+		footer: footerEl ? summarize(footerEl) : null,
+	};
+
+	// 互換: 旧フィールド（フラット）も残す
+	const flat = [];
+	if (outline.header) flat.push({ location: "header", ...outline.header });
+	flat.push(
+		...outline.main.sections.map((s) => ({ location: "main", ...s }))
+	);
+	if (outline.footer) flat.push({ location: "footer", ...outline.footer });
+
+	return {
+		header: outline.header,
+		main: outline.main,
+		footer: outline.footer,
+		sections: flat,
+	};
 }
 
 function toYaml(obj, indent = 0) {
@@ -248,124 +304,139 @@ function toYaml(obj, indent = 0) {
 }
 
 async function main() {
-  const host = process.argv[2];
-  if (!host) {
-    console.error("使い方: npm run optimize -- <ホスト名> 例) npm run optimize -- micro-f.co.jp");
-    process.exit(1);
-  }
+	const host = process.argv[2];
+	if (!host) {
+		console.error(
+			"使い方: npm run optimize -- <ホスト名> 例) npm run optimize -- micro-f.co.jp"
+		);
+		process.exit(1);
+	}
 
-  const siteDir = path.join(process.cwd(), "output", host);
-  const htmlPath = path.join(siteDir, "index.html");
-  const optimizedHtmlPath = path.join(siteDir, "index.optimized.html");
-  const stylesDir = path.join(siteDir, "styles");
-  const manifestPath = path.join(siteDir, "css-manifest.json");
+	const siteDir = path.join(process.cwd(), "output", host);
+	const htmlPath = path.join(siteDir, "index.html");
+	const optimizedHtmlPath = path.join(siteDir, "index.optimized.html");
+	const stylesDir = path.join(siteDir, "styles");
+	const manifestPath = path.join(siteDir, "css-manifest.json");
 
-  if (!fs.existsSync(htmlPath)) {
-    console.error(`HTMLが見つかりません: ${htmlPath}`);
-    process.exit(1);
-  }
+	if (!fs.existsSync(htmlPath)) {
+		console.error(`HTMLが見つかりません: ${htmlPath}`);
+		process.exit(1);
+	}
 
-  const html = readText(htmlPath);
-  const $ = cheerio.load(html);
+	const html = readText(htmlPath);
+	const $ = cheerio.load(html);
 
-  // 1) インラインスタイル抽出 -> .i-<hash> クラス化
-  const inlineCss = extractInlineStylesAndRewriteHtml($);
-  const inlineCssPath = path.join(stylesDir, "inline-extracted.css");
-  const shouldWriteInline = Boolean(inlineCss && inlineCss.trim().length > 0);
-  if (shouldWriteInline) {
-    writeText(inlineCssPath, inlineCss);
-  }
+	// オプション: js-で始まるクラスを全除去（CSSパージ前に適用）
+	if (REMOVE_JS_CLASSES) {
+		removeJsPrefixedClasses($);
+	}
 
-  // 2) リンクのダミー化
-  replaceAllLinksWithHash($);
+	// 1) インラインスタイル抽出 -> .i-<hash> クラス化
+	const inlineCss = extractInlineStylesAndRewriteHtml($);
+	const inlineCssPath = path.join(stylesDir, "inline-extracted.css");
+	const shouldWriteInline = Boolean(inlineCss && inlineCss.trim().length > 0);
+	if (shouldWriteInline) {
+		writeText(inlineCssPath, inlineCss);
+	}
 
-  // 3) テキストの匿名化は一旦無効化（後段AI処理後に実施）
-  // anonymizeTextNodes($);
+	// 2) リンクのダミー化
+	replaceAllLinksWithHash($);
 
-  // 4) CSSの未使用セレクタ削除（ファイル単位）。CDNはそのまま、同一ホストのCSSのみ最適化して差し替え
-  let manifest = null;
-  if (fs.existsSync(manifestPath)) {
-    try {
-      manifest = JSON.parse(readText(manifestPath));
-    } catch (_) {
-      manifest = null;
-    }
-  }
+	// 3) テキストの匿名化は一旦無効化（後段AI処理後に実施）
+	// anonymizeTextNodes($);
 
-  if (manifest && Array.isArray(manifest.assets)) {
-    for (const asset of manifest.assets) {
-      const { name, originHref } = asset;
-      if (!name || !originHref) continue;
-      try {
-        const urlObj = new URL(originHref);
-        const isSameHost = urlObj.hostname === host;
-        if (!isSameHost) {
-          // CDN/外部は変更しない
-          continue;
-        }
-        const cssFilePath = path.join(stylesDir, name);
-        if (!fs.existsSync(cssFilePath)) continue;
-        let targetName = name; // デフォルトは元CSSにフォールバック
-        try {
-          const cssText = readText(cssFilePath);
-          const purged = purgeUnusedCss(cssText, $);
-          const optimizedName = `optimized-${name}`;
-          const optimizedPath = path.join(stylesDir, optimizedName);
-          writeText(optimizedPath, purged);
-          targetName = optimizedName;
-        } catch (_) {
-          // フォールバックで元CSSを使う
-        }
-        // HTML内の該当<link>を書き換え（絶対/ルート相対/相対 すべて対応）
-        const variants = new Set([
-          originHref,
-          urlObj.pathname, // 例: /css/style.css
-          urlObj.pathname.replace(/^\//, ""), // 例: css/style.css
-        ]);
-        $("link[rel='stylesheet']").each((_, el) => {
-          const hrefCur = ($(el).attr("href") || "").trim();
-          if (!hrefCur) return;
-          if (variants.has(hrefCur)) {
-            $(el).attr("href", `./styles/${targetName}`);
-          }
-        });
-      } catch (_) {
-        // 解析できなければスキップ
-      }
-    }
-  }
+	// 4) CSSの未使用セレクタ削除（ファイル単位）。CDNはそのまま、同一ホストのCSSのみ最適化して差し替え
+	let manifest = null;
+	if (fs.existsSync(manifestPath)) {
+		try {
+			manifest = JSON.parse(readText(manifestPath));
+		} catch (_) {
+			manifest = null;
+		}
+	}
 
-  // 5) 最適化HTMLを書き出し（既存の<link>は維持。必要なら inline-extracted.css を追加）
-  const head = $("head");
-  if (inlineCss && inlineCss.trim().length > 0) {
-    head.append(`<link rel="stylesheet" href="./styles/inline-extracted.css">`);
-  }
+	if (manifest && Array.isArray(manifest.assets)) {
+		for (const asset of manifest.assets) {
+			const { name, originHref } = asset;
+			if (!name || !originHref) continue;
+			try {
+				const urlObj = new URL(originHref);
+				const isSameHost = urlObj.hostname === host;
+				if (!isSameHost) {
+					// CDN/外部は変更しない
+					continue;
+				}
+				const cssFilePath = path.join(stylesDir, name);
+				if (!fs.existsSync(cssFilePath)) continue;
+				let targetName = name; // デフォルトは元CSSにフォールバック
+				try {
+					const cssText = readText(cssFilePath);
+					const purged = purgeUnusedCss(cssText, $);
+					const optimizedName = `optimized-${name}`;
+					const optimizedPath = path.join(stylesDir, optimizedName);
+					writeText(optimizedPath, purged);
+					targetName = optimizedName;
+				} catch (_) {
+					// フォールバックで元CSSを使う
+				}
+				// HTML内の該当<link>を書き換え（絶対/ルート相対/相対 すべて対応）
+				const variants = new Set([
+					originHref,
+					urlObj.pathname, // 例: /css/style.css
+					urlObj.pathname.replace(/^\//, ""), // 例: css/style.css
+				]);
+				$("link[rel='stylesheet']").each((_, el) => {
+					const hrefCur = ($(el).attr("href") || "").trim();
+					if (!hrefCur) return;
+					if (variants.has(hrefCur)) {
+						$(el).attr("href", `./styles/${targetName}`);
+					}
+				});
+			} catch (_) {
+				// 解析できなければスキップ
+			}
+		}
+	}
 
-  writeText(optimizedHtmlPath, $.html({ decodeEntities: false }));
+	// 5) 最適化HTMLを書き出し（既存の<link>は維持。必要なら inline-extracted.css を追加）
+	const head = $("head");
+	if (inlineCss && inlineCss.trim().length > 0) {
+		head.append(
+			`<link rel="stylesheet" href="./styles/inline-extracted.css">`
+		);
+	}
 
-  // 6) 構造化データ出力（JSON/YAML）
-  const outline = buildStructuredOutline($);
-  const structuredJsonPath = path.join(siteDir, "structured.json");
-  const structuredYamlPath = path.join(siteDir, "structured.yml");
-  writeText(structuredJsonPath, JSON.stringify(outline, null, 2));
-  writeText(structuredYamlPath, toYaml(outline) + "\n");
+	writeText(optimizedHtmlPath, $.html({ decodeEntities: false }));
 
-  console.log("最適化出力: ");
-  console.log(" HTML:", optimizedHtmlPath);
-  if (manifest && Array.isArray(manifest.assets)) {
-    const optimizedList = manifest.assets
-      .map((a) => a && a.name && path.join(stylesDir, `optimized-${a.name}`))
-      .filter((p) => p && fs.existsSync(p));
-    if (optimizedList.length > 0) {
-      console.log(" CSS (optimized per file):");
-      optimizedList.forEach((p) => console.log("  -", p));
-    }
-  }
-  if (shouldWriteInline) {
-    console.log(" CSS (inline-extracted):", path.join(stylesDir, "inline-extracted.css"));
-  }
-  console.log(" JSON:", structuredJsonPath);
-  console.log(" YAML:", structuredYamlPath);
+	// 6) 構造化データ出力（JSON/YAML）
+	const outline = buildStructuredOutline($);
+	const structuredJsonPath = path.join(siteDir, "structured.json");
+	const structuredYamlPath = path.join(siteDir, "structured.yml");
+	writeText(structuredJsonPath, JSON.stringify(outline, null, 2));
+	writeText(structuredYamlPath, toYaml(outline) + "\n");
+
+	console.log("最適化出力: ");
+	console.log(" HTML:", optimizedHtmlPath);
+	if (manifest && Array.isArray(manifest.assets)) {
+		const optimizedList = manifest.assets
+			.map(
+				(a) =>
+					a && a.name && path.join(stylesDir, `optimized-${a.name}`)
+			)
+			.filter((p) => p && fs.existsSync(p));
+		if (optimizedList.length > 0) {
+			console.log(" CSS (optimized per file):");
+			optimizedList.forEach((p) => console.log("  -", p));
+		}
+	}
+	if (shouldWriteInline) {
+		console.log(
+			" CSS (inline-extracted):",
+			path.join(stylesDir, "inline-extracted.css")
+		);
+	}
+	console.log(" JSON:", structuredJsonPath);
+	console.log(" YAML:", structuredYamlPath);
 }
 
 main().catch((error) => {

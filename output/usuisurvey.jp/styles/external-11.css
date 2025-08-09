@@ -1,0 +1,26 @@
+/*20250130リンクの下線を消す*/
+a:not([class]),#contents .form_wrap a,span.policy-trigger {
+    text-decoration: none;
+    color: var(--linkC);
+}
+:root{
+  --title1:var(--un);
+  --title2:var(--bk50);
+}
+/* h1ページタイトル背景一括変更 */
+/*#contents .title1{*/
+/*    background-image: url(/images/home/mv01sp.jpg);*/
+/*}*/
+@media screen and (max-width: 640px) {
+.home .bg_grad>.bg_fix{
+  height:40vh!important;
+}
+}
+.mv_it .im {
+    margin-inline: unset!important;
+    max-width:75%!important;
+    max-height:20vh!important;
+}
+.mv_it img {
+    max-height:20vh!important;
+}

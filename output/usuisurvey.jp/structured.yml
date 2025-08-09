@@ -1,0 +1,145 @@
+header:
+  tag: header
+  id: global_header
+  classes:
+[]
+  text: "0248-32-3846 CONTACT ホーム 事業内容 会社概要 理念・ビジョン・戦略 宣言・認定・認証 ホーム 事業内容 会社概要 理念・ビジョン・戦略 宣言・認定・認証"
+  headings:
+[]
+main:
+  sections:
+    - tag: section
+      id: ''
+      classes:
+[]
+      text: "i-Constructionを強力に支援 薄井測量は、45年以上の歴史と確かな技術力を誇る測量設計会社です。 ドローンやGNSS測量など、最新の先端技術を駆使し、正確かつ効率的な測量サービスを提供しています。 私たちは、地域の発展に貢献する"
+      headings:
+        - 薄井測量は、45年以上の歴史と確かな技術力を誇る測量設計会社です。
+        - OUR SERVICES事業内容
+        - "i-Construction（ICT施工）支援"
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: OUR SERVICES事業内容
+      headings:         - OUR SERVICES事業内容
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: "i-Construction（ICT施工）支援 弊社では建設会社様のi-Construction（ＩＣＴ施工）を3次元測量から出来形管理までワンストップで支援します。 View More i-Construction"
+      headings:         - "i-Construction（ICT施工）支援"
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 3次元測量 ドローン測量は、ドローンに搭載したカメラやレーザー測距装置を使って空中から地形や地物を撮影・計測する手法です。広範囲の短時間測量や人が立ち入りにくい場所の測量が可能で、CADデータ作成や3Dモデリングなどに活用できます。 Vie
+      headings:         - 3次元測量
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 3次元測量 ドローン測量は、ドローンに搭載したカメラやレーザー測距装置を使って空中から地形や地物を撮影・計測する手法です。広範囲の短時間測量や人が立ち入りにくい場所の測量が可能で、CADデータ作成や3Dモデリングなどに活用できます。 Vie
+      headings:         - 3次元測量
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 基準点測量 地上に設置した基準点の位置を正確に測定する手法です。基準点は地図作成や各種測量の基準となるため、その位置を正確に把握することが重要です。基準点の座標値を取得し、地図や設計図に反映させることができます。 View More REF
+      headings:         - 基準点測量
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: "現地測量 土地の形状や地物を正確に把握するための測量手法です。基準点測量、水準測量、地形測量などを組み合わせて行い、数値地形図データを作成します。不動産管理や建設工事などで重要な情報を提供します。 View More ON-SITE"
+      headings:         - 現地測量
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 路線測量 道路などの新設・改良に必要な現地の地形や地物を正確に把握するための測量です。線形決定、IP設置、中心線測量、仮BM設置など、詳細な工程を経て正確な路線図を作成します。建設工事の基礎データとして重要な役割を果たします。 View M
+      headings:         - 路線測量
+footer:
+  tag: footer
+  id: global_footer
+  classes:
+[]
+  text: "株式会社薄井測量 〒961-0403 福島県白河市表郷番沢里見52番地 ホーム 事業内容 会社概要 理念・ビジョン・戦略 宣言・認定・認証 2024 - 株式会社薄井測量"
+  headings:
+[]
+sections:
+  - location: header
+    tag: header
+    id: global_header
+    classes:
+[]
+    text: "0248-32-3846 CONTACT ホーム 事業内容 会社概要 理念・ビジョン・戦略 宣言・認定・認証 ホーム 事業内容 会社概要 理念・ビジョン・戦略 宣言・認定・認証"
+    headings:
+[]
+  - location: main
+    tag: section
+    id: ''
+    classes:
+[]
+    text: "i-Constructionを強力に支援 薄井測量は、45年以上の歴史と確かな技術力を誇る測量設計会社です。 ドローンやGNSS測量など、最新の先端技術を駆使し、正確かつ効率的な測量サービスを提供しています。 私たちは、地域の発展に貢献する"
+    headings:
+      - 薄井測量は、45年以上の歴史と確かな技術力を誇る測量設計会社です。
+      - OUR SERVICES事業内容
+      - "i-Construction（ICT施工）支援"
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: OUR SERVICES事業内容
+    headings:       - OUR SERVICES事業内容
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: "i-Construction（ICT施工）支援 弊社では建設会社様のi-Construction（ＩＣＴ施工）を3次元測量から出来形管理までワンストップで支援します。 View More i-Construction"
+    headings:       - "i-Construction（ICT施工）支援"
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: 3次元測量 ドローン測量は、ドローンに搭載したカメラやレーザー測距装置を使って空中から地形や地物を撮影・計測する手法です。広範囲の短時間測量や人が立ち入りにくい場所の測量が可能で、CADデータ作成や3Dモデリングなどに活用できます。 Vie
+    headings:       - 3次元測量
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: 3次元測量 ドローン測量は、ドローンに搭載したカメラやレーザー測距装置を使って空中から地形や地物を撮影・計測する手法です。広範囲の短時間測量や人が立ち入りにくい場所の測量が可能で、CADデータ作成や3Dモデリングなどに活用できます。 Vie
+    headings:       - 3次元測量
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: 基準点測量 地上に設置した基準点の位置を正確に測定する手法です。基準点は地図作成や各種測量の基準となるため、その位置を正確に把握することが重要です。基準点の座標値を取得し、地図や設計図に反映させることができます。 View More REF
+    headings:       - 基準点測量
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: "現地測量 土地の形状や地物を正確に把握するための測量手法です。基準点測量、水準測量、地形測量などを組み合わせて行い、数値地形図データを作成します。不動産管理や建設工事などで重要な情報を提供します。 View More ON-SITE"
+    headings:       - 現地測量
+  - location: main
+    tag: article
+    id: ''
+    classes:
+[]
+    text: 路線測量 道路などの新設・改良に必要な現地の地形や地物を正確に把握するための測量です。線形決定、IP設置、中心線測量、仮BM設置など、詳細な工程を経て正確な路線図を作成します。建設工事の基礎データとして重要な役割を果たします。 View M
+    headings:       - 路線測量
+  - location: footer
+    tag: footer
+    id: global_footer
+    classes:
+[]
+    text: "株式会社薄井測量 〒961-0403 福島県白河市表郷番沢里見52番地 ホーム 事業内容 会社概要 理念・ビジョン・戦略 宣言・認定・認証 2024 - 株式会社薄井測量"
+    headings:
+[]

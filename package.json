@@ -9,7 +9,9 @@
     "optimize": "node src/optimize.js",
     "collect:features": "node src/collectFeatures.js",
     "ai:segment": "node src/aiSegment.js",
-    "tag": "node src/TagElements.js"
+"tag": "node src/TagElements.js",
+"demo:api": "node api/edit.js serve",
+"demo": "(npx --yes http-server . -p 3000 -c-1) & (sleep 0.5 && echo 'Open http://localhost:3000/demo/') && (npx --yes http-server output -p 5173 -c-1)"
   },
   "keywords": [],
   "author": "",
