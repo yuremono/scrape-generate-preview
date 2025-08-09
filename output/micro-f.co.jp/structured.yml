@@ -1,198 +1,262 @@
+header:
+  tag: header
+  id: global_header
+  classes:
+[]
+  text: "TH EN JP 03-3791-0770 CONTACT 製品紹介 プラスチック用インサートナット インサートナット圧入装置 プラスチック射出成形金型 精密切削（自動旋盤）加工品 クリンチングファスナー ブラインドリベット/ナット 導入事"
+  headings:
+[]
+main:
+  sections:
+    - tag: section
+      id: ''
+      classes:
+[]
+      text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるた
+      headings:
+        - Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く
+        - ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ
+        - PRODUCT製品紹介
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるため弊社部品の使用方法や生産方法を十分に考慮し、より良い提案を行うことで部品調達最適化の手助けをします
+      headings:         - ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: PRODUCT製品紹介
+      headings:         - PRODUCT製品紹介
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: プラスチック用インサートナット プラスチック用インサートナット
+      headings:         - プラスチック用インサートナット
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: インサートナット圧入装置 インサートナット圧入装置
+      headings:         - インサートナット圧入装置
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: プラスチック射出成形金型 プラスチック射出成形金型
+      headings:         - プラスチック射出成形金型
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 精密切削（自動旋盤）加工 精密切削（自動旋盤）加工
+      headings:         - 精密切削（自動旋盤）加工
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: クリンチングファスナー クリンチングファスナー
+      headings:         - クリンチングファスナー
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: ブラインドリベット/ナット※ インサートナット
+      headings:         - インサートナット
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: プラスチック用インサートナット プラスチック用インサートナット
+      headings:         - プラスチック用インサートナット
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: クリンチングファスナー クリンチングファスナー
+      headings:         - クリンチングファスナー
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 精密切削（自動旋盤）加工 精密切削（自動旋盤）加工
+      headings:         - 精密切削（自動旋盤）加工
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: マシニング機械加工品 マシニング機械加工品
+      headings:         - マシニング機械加工品
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: ブラインドリベット/ナット※ インサートナット
+      headings:         - インサートナット
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: 産業用装置設計製作 産業用装置設計製作
+      headings:         - 産業用装置設計製作
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: WHAT WE CAN DOマイクロファスナー株式会社でできること インサートナット・クリンチングファスナーの事ならマイクロファスナー株式会社へ
+      headings:         - WHAT WE CAN DOマイクロファスナー株式会社でできること
+    - tag: article
+      id: ''
+      classes:
+[]
+      text: NEWS & TOPICS新着情報
+      headings:         - NEWS & TOPICS新着情報
+footer:
+  tag: footer
+  id: global_footer
+  classes:
+[]
+  text: "本社・営業部 〒153-0061 東京都目黒区中目黒4-5-26 TEL： 03-3791-0770 FAX： 03-3791-2200 製品管理部 〒223-0056 横浜市港北区新吉田町6104-1 TEL： 045-620-8012 "
+  headings:
+[]
 sections:
-  - tag: header
+  - location: header
+    tag: header
     id: global_header
     classes:
 []
     text: "TH EN JP 03-3791-0770 CONTACT 製品紹介 プラスチック用インサートナット インサートナット圧入装置 プラスチック射出成形金型 精密切削（自動旋盤）加工品 クリンチングファスナー ブラインドリベット/ナット 導入事"
-    children:
-      - tag: div
-        id: header
-        classes:           - h
-        text: "TH EN JP 03-3791-0770 CONTACT 製品紹介 プラスチック用インサートナット インサートナット圧入装置 プラスチック射出成形金型 精密切"
-      - tag: nav
-        id: nav
-        classes:           - h_nav
-        text: 製品紹介 プラスチック用インサートナット インサートナット圧入装置 プラスチック射出成形金型 精密切削（自動旋盤）加工品 クリンチングファスナー ブラインドリベ
-      - tag: nav
-        id: navsp
-        classes:           - nav
-        text: 製品紹介 プラスチック用インサートナット インサートナット圧入装置 プラスチック射出成形金型 精密切削（自動旋盤）加工品 クリンチングファスナー ブラインドリベ
-  - tag: div
-    id: contents_wrap
+    headings:
+[]
+  - location: main
+    tag: section
+    id: ''
     classes:
 []
     text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるた
-    children:
-      - tag: div
-        id: contents
-        classes:           - clearfix
-        text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事
-      - tag: section
-        id: ''
-        classes:
+    headings:
+      - Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く
+      - ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ
+      - PRODUCT製品紹介
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く ABOUT USインサートナット・クリンチングファスナーの事
-      - tag: div
-        id: c34
-        classes:           - Background
-        text: ''
-      - tag: div
-        id: c2
-        classes:
-          - mv
-          - bg100
-        text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く
-      - tag: div
-        id: c32
-        classes:
-          - clearfix
-          - mv_it
-          - sg
-        text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く
-      - tag: h1
-        id: ''
-        classes:           - show
-        text: Think about Precision Parts 小さな部品で世の中に大きく貢献し未来を築く
-      - tag: div
-        id: c33
-        classes:
-          - clearfix
-          - mv_img
-          - show
-        text: ''
-      - tag: div
-        id: c36
-        classes:
+    text: ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるため弊社部品の使用方法や生産方法を十分に考慮し、より良い提案を行うことで部品調達最適化の手助けをします
+    headings:       - ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: ''
-      - tag: div
-        id: c35
-        classes:
-          - clearfix
-          - "art-fl"
-          - aic
-          - bg100
-          - in1680
-          - txwh
-          - "em-tx"
-          - PB1
-          - "left-tab"
-        text: ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるため弊社部品の使用方法
-      - tag: article
-        id: ''
-        classes:
+    text: PRODUCT製品紹介
+    headings:       - PRODUCT製品紹介
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ 我々は顧客が必要とする製品仕様を満足させるため弊社部品の使用方法
-      - tag: h2
-        id: ''
-        classes:
+    text: プラスチック用インサートナット プラスチック用インサートナット
+    headings:       - プラスチック用インサートナット
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: ABOUT USインサートナット・クリンチングファスナーの事なら マイクロファスナー株式会社へ
-      - tag: div
-        id: c24
-        classes:
-          - Product
-          - PB1
-          - mt0
-        text: PRODUCT製品紹介 プラスチック用インサートナット プラスチック用インサートナット インサートナット圧入装置 インサートナット圧入装置 プラスチック射出成形
-      - tag: div
-        id: c39
-        classes:
+    text: インサートナット圧入装置 インサートナット圧入装置
+    headings:       - インサートナット圧入装置
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: ''
-      - tag: div
-        id: c37
-        classes:           - clearfix
-        text: PRODUCT製品紹介
-      - tag: article
-        id: ''
-        classes:
+    text: プラスチック射出成形金型 プラスチック射出成形金型
+    headings:       - プラスチック射出成形金型
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: PRODUCT製品紹介
-      - tag: h2
-        id: ''
-        classes:
+    text: 精密切削（自動旋盤）加工 精密切削（自動旋盤）加工
+    headings:       - 精密切削（自動旋盤）加工
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: PRODUCT製品紹介
-      - tag: div
-        id: c38
-        classes:
-          - card3
-          - mt40
-        text: プラスチック用インサートナット プラスチック用インサートナット インサートナット圧入装置 インサートナット圧入装置 プラスチック射出成形金型 プラスチック射出成
-      - tag: article
-        id: ''
-        classes:
+    text: クリンチングファスナー クリンチングファスナー
+    headings:       - クリンチングファスナー
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: プラスチック用インサートナット プラスチック用インサートナット
-      - tag: h3
-        id: ''
-        classes:
+    text: ブラインドリベット/ナット※ インサートナット
+    headings:       - インサートナット
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: プラスチック用インサートナット
-      - tag: article
-        id: ''
-        classes:
+    text: プラスチック用インサートナット プラスチック用インサートナット
+    headings:       - プラスチック用インサートナット
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: インサートナット圧入装置 インサートナット圧入装置
-      - tag: h3
-        id: ''
-        classes:
+    text: クリンチングファスナー クリンチングファスナー
+    headings:       - クリンチングファスナー
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: インサートナット圧入装置
-      - tag: article
-        id: ''
-        classes:
+    text: 精密切削（自動旋盤）加工 精密切削（自動旋盤）加工
+    headings:       - 精密切削（自動旋盤）加工
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: プラスチック射出成形金型 プラスチック射出成形金型
-      - tag: h3
-        id: ''
-        classes:
+    text: マシニング機械加工品 マシニング機械加工品
+    headings:       - マシニング機械加工品
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: プラスチック射出成形金型
-      - tag: article
-        id: ''
-        classes:
+    text: ブラインドリベット/ナット※ インサートナット
+    headings:       - インサートナット
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: 精密切削（自動旋盤）加工 精密切削（自動旋盤）加工
-      - tag: h3
-        id: ''
-        classes:
+    text: 産業用装置設計製作 産業用装置設計製作
+    headings:       - 産業用装置設計製作
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: 精密切削（自動旋盤）加工
-      - tag: article
-        id: ''
-        classes:
+    text: WHAT WE CAN DOマイクロファスナー株式会社でできること インサートナット・クリンチングファスナーの事ならマイクロファスナー株式会社へ
+    headings:       - WHAT WE CAN DOマイクロファスナー株式会社でできること
+  - location: main
+    tag: article
+    id: ''
+    classes:
 []
-        text: クリンチングファスナー クリンチングファスナー
-      - tag: h3
-        id: ''
-        classes:
-[]
-        text: クリンチングファスナー
-      - tag: article
-        id: ''
-        classes:
-[]
-        text: ブラインドリベット/ナット※ インサートナット
-      - tag: h3
-        id: ''
-        classes:
-[]
-        text: インサートナット
-      - tag: div
-        id: c45
-        classes:
-          - card3
-          - mt40
-        text: プラスチック用インサートナット プラスチック用インサートナット クリンチングファスナー クリンチングファスナー 精密切削（自動旋盤）加工 精密切削（自動旋盤）加
-  - tag: footer
+    text: NEWS & TOPICS新着情報
+    headings:       - NEWS & TOPICS新着情報
+  - location: footer
+    tag: footer
     id: global_footer
     classes:
 []
     text: "本社・営業部 〒153-0061 東京都目黒区中目黒4-5-26 TEL： 03-3791-0770 FAX： 03-3791-2200 製品管理部 〒223-0056 横浜市港北区新吉田町6104-1 TEL： 045-620-8012 "
-    children:
-      - tag: div
-        id: footer
-        classes:           - f
-        text: "本社・営業部 〒153-0061 東京都目黒区中目黒4-5-26 TEL： 03-3791-0770 FAX： 03-3791-2200 製品管理部 〒223-"
+    headings:
+[]

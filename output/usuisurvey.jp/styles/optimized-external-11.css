@@ -1,0 +1,13 @@
+/*20250130リンクの下線を消す*//*20250130リンクの下線を消す*/a:not([class]) {
+    text-decoration: none;
+    color: var(--linkC)
+}:root {
+  --title1:var(--un);
+  --title2:var(--bk50)
+}/* h1ページタイトル背景一括変更 *//*#contents .title1{*//*    background-image: url(/images/home/mv01sp.jpg);*//*}*/.mv_it .im {
+    margin-inline: unset!important;
+    max-width:75%!important;
+    max-height:20vh!important
+}.mv_it img {
+    max-height:20vh!important
+}

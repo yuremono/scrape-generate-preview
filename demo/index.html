@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI Edit Demo</title>
+    <style>
+      html, body { height: 100%; margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+      .layout { height: 100%; display: flex; flex-direction: column; }
+      header { padding: 8px 12px; border-bottom: 1px solid #eee; display: flex; gap: 12px; align-items: center; }
+      .main-row { display: flex; height: calc(100vh - 50px); min-height: 360px; }
+      .left { flex: 1 1 auto; min-width: 240px; border-right: 1px solid #eee; }
+      .pane { height: 100%; }
+      iframe { width: 100%; height: 100%; border: 0; background: #fff; display: block; }
+      .divider { width: 8px; cursor: col-resize; background: #f2f2f2; border-left: 1px solid #eee; border-right: 1px solid #eee; }
+      .right { flex: 0 0 var(--rightPct, 25%); min-width: 260px; max-width: 80vw; display: flex; flex-direction: column; }
+      form { display: flex; flex-direction: column; gap: 8px; padding: 12px; border-bottom: 1px solid #eee; }
+      textarea { width: 100%; min-height: 120px; font-family: inherit; font-size: 14px; }
+      input[type="text"] { font-size: 14px; padding: 6px 8px; }
+      button { padding: 8px 10px; font-size: 14px; cursor: pointer; }
+      .log { flex: 1; overflow: auto; padding: 12px; font-family: ui-monospace, SFMono-Regular, Menlo, monospace; background: #fafafa; }
+      .row { display: flex; gap: 8px; align-items: center; }
+      .row label { font-size: 12px; color: #555; }
+      details { border-top: 1px dashed #ddd; margin-top: 8px; padding-top: 8px; }
+      summary { cursor: pointer; }
+    </style>
+  </head>
+  <body>
+    <div class="layout">
+      <header>
+        <h1 style="margin:0;font-size:16px;">AI Edit Demo</h1>
+        <div class="row">
+          <label for="host">Host:</label>
+          <input id="host" type="text" value="micro-f.co.jp" aria-label="Target host" />
+          <label for="force" style="display:flex;align-items:center;gap:4px;">
+            <input id="force" type="checkbox" /> 強制再取得
+          </label>
+          <button id="load">Load</button>
+          <button id="reset">Reset</button>
+        </div>
+      </header>
+      <main class="main-row">
+        <section class="left pane">
+          <iframe id="preview" src="about:blank" title="Preview" loading="lazy"></iframe>
+        </section>
+        <div id="divider" class="divider"></div>
+        <section class="right pane">
+          <form id="chat">
+            <label for="msg">自然言語で指示を入力</label>
+            <textarea id="msg" placeholder="例: アバウトセクションの本文を『〜』に変更／左の画像の角丸を30pxに"></textarea>
+            <div class="row">
+              <button type="submit">送信</button>
+            </div>
+          </form>
+          <div id="log" class="log"></div>
+        </section>
+      </main>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+  </html>
+
+
