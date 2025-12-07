@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Frontend Demos - Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans JP', sans-serif;
+            background: linear-gradient(135deg, #02020d 0%, #1a1a2e 100%);
+            color: #ffffff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 1200px;
+            width: 100%;
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        
+        h1 {
+            font-size: clamp(32px, 5vw, 56px);
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: linear-gradient(135deg, #209cff, #68e0cf);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: clamp(16px, 2vw, 20px);
+            color: #b0b0b0;
+            font-weight: 400;
+        }
+        
+        .demos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 32px;
+            margin-bottom: 60px;
+        }
+        
+        .demo-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 32px;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .demo-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, #209cff, #68e0cf);
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+        
+        .demo-card:hover {
+            transform: translateY(-8px);
+            background: rgba(255, 255, 255, 0.08);
+            border-color: rgba(104, 224, 207, 0.3);
+        }
+        
+        .demo-card:hover::before {
+            transform: scaleX(1);
+        }
+        
+        .demo-icon {
+            font-size: 48px;
+            margin-bottom: 16px;
+        }
+        
+        .demo-title {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            color: #ffffff;
+        }
+        
+        .demo-description {
+            font-size: 16px;
+            line-height: 1.6;
+            color: #b0b0b0;
+            margin-bottom: 20px;
+        }
+        
+        .demo-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 24px;
+        }
+        
+        .tag {
+            font-size: 12px;
+            padding: 4px 12px;
+            background: rgba(32, 156, 255, 0.2);
+            border: 1px solid rgba(32, 156, 255, 0.3);
+            border-radius: 12px;
+            color: #68e0cf;
+        }
+        
+        .demo-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            padding: 12px 24px;
+            background: linear-gradient(135deg, #209cff, #1425c1);
+            color: #ffffff;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+        
+        .demo-link:hover {
+            transform: translateX(4px);
+            box-shadow: 0 8px 24px rgba(32, 156, 255, 0.3);
+        }
+        
+        footer {
+            text-align: center;
+            color: #808080;
+            font-size: 14px;
+            margin-top: 40px;
+        }
+        
+        footer a {
+            color: #68e0cf;
+            text-decoration: none;
+        }
+        
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Creative Frontend Demos</h1>
+            <p class="subtitle">フロントエンド開発のクリエイティブ要素デモ集</p>
+        </header>
+        
+        <div class="demos">
+            <div class="demo-card">
+                <div class="demo-icon">✨</div>
+                <h2 class="demo-title">Digital Platform Demo</h2>
+                <p class="demo-description">
+                    グリッチエフェクトとスクロールアニメーションを活用した、
+                    モダンなデジタルプラットフォームのデモサイト
+                </p>
+                <div class="demo-tags">
+                    <span class="tag">Glitch Effect</span>
+                    <span class="tag">Scroll Animation</span>
+                    <span class="tag">Canvas</span>
+                    <span class="tag">IntersectionObserver</span>
+                </div>
+                <a href="./e-trust.ne.jp/" class="demo-link">
+                    デモを見る →
+                </a>
+            </div>
+            
+            <!-- 将来のデモ用のプレースホルダー -->
+            <!-- 
+            <div class="demo-card">
+                <div class="demo-icon">🎨</div>
+                <h2 class="demo-title">Coming Soon</h2>
+                <p class="demo-description">
+                    新しいクリエイティブデモを準備中...
+                </p>
+                <div class="demo-tags">
+                    <span class="tag">Coming Soon</span>
+                </div>
+            </div>
+            -->
+        </div>
+        
+        <footer>
+            <p>Creative Frontend Development Portfolio</p>
+            <p><a href="https://github.com/yuremono/scrape-generate-preview" target="_blank">GitHub Repository</a></p>
+        </footer>
+    </div>
+</body>
+</html>
+
